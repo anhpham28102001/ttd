@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- <link href="./style.css" rel="stylesheet" type="text/css" /> -->
+  <!-- <link href="./style2.css" rel="stylesheet" type="text/css" /> -->
+</head>
+
+<body>
+
+
+
+  <div id="shell">
+    <div id="container" onClick="container_move(function(){open_card();});">
+      <div id="box1" class="box">
+        <h1>20/11</h1>
+      </div>
+      <div id="box1_back" class="box"></div>
+      <div id="box2" class="box">
+
+
+
+        <section>
+
+          <h3> From Advanced class with love</h3>
+          <h2>
+            Chúc cô <br /> 20 / 11 <br /> vui vẻ <br /> hạnh phúc
+          </h2>
+
+      </div>
+      <div class="leaf">
+        <div> <img
+            src="https://png.pngtree.com/png-vector/20220428/ourmid/pngtree-smooth-glossy-heart-vector-file-ai-and-png-png-image_4557871.png"
+            height="75px" width="75px"></img></div>
+        <div><img
+            src="https://png.pngtree.com/png-vector/20220428/ourmid/pngtree-smooth-glossy-heart-vector-file-ai-and-png-png-image_4557871.png"
+            height="75px" width="75px"></img></div>
+        <div> <img
+            src="https://png.pngtree.com/png-vector/20220428/ourmid/pngtree-smooth-glossy-heart-vector-file-ai-and-png-png-image_4557871.png"
+            height="75px" width="75px"></img></div>
+        <div><img
+            src="https://png.pngtree.com/png-vector/20220428/ourmid/pngtree-smooth-glossy-heart-vector-file-ai-and-png-png-image_4557871.png"
+            height="75px" width="75px"></img></div>
+        <div> <img
+            src="https://png.pngtree.com/png-vector/20220428/ourmid/pngtree-smooth-glossy-heart-vector-file-ai-and-png-png-image_4557871.png"
+            height="75px" width="75px"></img></div>
+        <div> <img
+            src="https://png.pngtree.com/png-vector/20220428/ourmid/pngtree-smooth-glossy-heart-vector-file-ai-and-png-png-image_4557871.png"
+            height="75px" width="75px"></div>
+        <div><img
+            src="https://png.pngtree.com/png-vector/20220428/ourmid/pngtree-smooth-glossy-heart-vector-file-ai-and-png-png-image_4557871.png"
+            height="75px" width="75px"></div>
+
+      </div>
+
+
+    </div>
+    </section>
+
+
+
+
+
+
+
+  </div>
+  </div>
+  </div>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Agbalumo&display=swap");
+
+    body {
+      background: cornsilk;
+      margin: 0px;
+      z-index: -1;
+    }
+
+    p {
+      color: #888;
+      font-family: Arial;
+      font-size: 120%;
+      font-weight: lighter;
+      letter-spacing: 1px;
+      position: absolute;
+      left: 50%;
+      margin: 10px 0px;
+      top: 0px;
+      transform: translateX(-50%);
+    }
+
+    #container,
+    #shell {
+      width: 30%;
+      max-width: 500px;
+      height: 600px;
+      display: block;
+      position: relative;
+      z-index: 10;
+      margin: 50px 0px;
+      cursor: pointer;
+    }
+
+    #container {
+      width: 100%;
+      transform: rotateX(40deg);
+      transform-style: preserve-3d;
+      transition: all 1s ease;
+      -webkit-transition: all 1s ease;
+    }
+
+    #shell {
+      left: 50%;
+      perspective: 1400px;
+      transform: translateX(-50%);
+      transition: all 0.2s ease;
+      -webkit-transition: all 0.2s ease;
+    }
+
+    .box {
+      width: 100%;
+      height: 100%;
+      transition: all 1s ease;
+      -webkit-transition: all 1s ease;
+      -webkit-backface-visibility: visible;
+      transform-origin: left;
+      transform-style: preserve-3D;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+
+    div#box1 {
+      background: url("./Cream\ Brown\ cute\ illustration\ Teacher's\ Day\ Instagram\ story\ \ \(1080\ x\ 1520\ px\).png");
+      background-size: 100% 100%;
+      transform: rotate3d(0, 1, 0, 0deg);
+      -webkit-backface-visibility: hidden;
+      z-index: 10;
+    }
+
+    div#box1_back {
+      background: url("./ttd.png");
+      /* transform: url('./jpg.jpg'); */
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: 0;
+    }
+
+    div#box2 {
+      background: white;
+      transform: rotate3d(0, 1, 0, 0deg);
+      -webkit-backface-visibility: visible;
+      z-index: -1;
+    }
+
+    h1 {
+      font-family: Agbalumo;
+      font-size: 5em;
+      color: white;
+      margin: 0px;
+      position: relative;
+      top: 70%;
+      display: -webkit-box;
+      width: 100%;
+      text-align: center;
+      -webkit-box-pack: center;
+      font-weight: 200;
+      -webkit-user-select: none;
+      user-select: none;
+      background: burlywood;
+    }
+
+    h6 {
+      font-family: "lobster", cursive;
+      font-size: 150%;
+      color: #c5e1a5;
+      margin: 0px;
+      position: relative;
+      top: 60%;
+      display: -webkit-box;
+      width: 100%;
+      text-align: center;
+      -webkit-box-pack: center;
+      font-weight: 200;
+      -webkit-user-select: none;
+      user-select: none;
+      font-size: 3vh;
+    }
+
+    @media screen and (max-width: 1000px) {
+
+      #container,
+      #shell {
+        width: 70%;
+        max-height: 70%;
+        top: 10%;
+      }
+
+      h1 {
+        font-size: 10vh;
+      }
+    }
+
+    /* Created by Doll */
+    @import url("https://fonts.googleapis.com/css2?family=Agbalumo&display=swap");
+
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    section {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background: transparent;
+    }
+
+    .leaf {
+      position: absolute;
+      width: 97%;
+      height: 71%;
+      top: 40px;
+      left: 0;
+    }
+
+    .leaf div {
+      position: absolute;
+      display: block;
+    }
+
+    .leaf div:nth-child(1) {
+      left: 20%;
+      animation: fall 10s linear infinite;
+      animation-delay: -2s;
+    }
+
+    .leaf div:nth-child(2) {
+      left: 70%;
+      animation: fall 15s linear infinite;
+      animation-delay: -4s;
+    }
+
+    .leaf div:nth-child(3) {
+      left: 10%;
+      animation: fall 20s linear infinite;
+      animation-delay: -7s;
+    }
+
+    .leaf div:nth-child(4) {
+      left: 50%;
+      animation: fall 18s linear infinite;
+      animation-delay: -5s;
+    }
+
+    .leaf div:nth-child(5) {
+      left: 85%;
+      animation: fall 14s linear infinite;
+      animation-delay: -5s;
+    }
+
+    .leaf div:nth-child(6) {
+      left: 15%;
+      animation: fall 18s linear infinite;
+      animation-delay: -10s;
+    }
+
+    .leaf div:nth-child(7) {
+      left: 30%;
+      animation: fall 15s linear infinite;
+      animation-delay: -4s;
+    }
+
+    @keyframes fall {
+      0% {
+        opacity: 1;
+        top: -10%;
+        transform: translateX (20px) rotate(0deg);
+      }
+
+      20% {
+        opacity: 0.8;
+        transform: translateX (20px) rotate(45deg);
+      }
+
+      40% {
+        transform: translateX (-20px) rotate(90deg);
+      }
+
+      60% {
+        transform: translateX (-20px) rotate(135deg);
+      }
+
+      80% {
+        transform: translateX (-20px) rotate(180deg);
+      }
+
+      100% {
+        top: 110%;
+        transform: translateX (-20px) rotate(225deg);
+      }
+    }
+
+    .leaf1 {
+      transform: rotateX(180deg);
+    }
+
+    h2 {
+      position: absolute;
+      top: 0%;
+      width: 100%;
+      font-size: 5em;
+      text-align: center;
+      transform: translate;
+      color: #b7e7cb;
+      transform: translateY (-50%);
+      font-family: Agbalumo;
+    }
+
+    h3 {
+      position: absolute;
+      top: 0%;
+      width: 100%;
+      text-align: center;
+      transform: translate;
+      color: #b7e7cb;
+      transform: translateY (-50%);
+      font-family: Agbalumo;
+    }
+  </style>
+
+
+  <script src="./index.js"></script>
+  <script src="./index2.js"></script>
+</body>
+
+</html>
